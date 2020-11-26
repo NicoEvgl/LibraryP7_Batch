@@ -33,6 +33,7 @@ public class ReminderServiceImpl implements ReminderService {
         }
     }
 
+
     private void sendMailToUser(String email){
         System.out.println(email);
         SimpleMailMessage simpleMailMessage = createEmail(email);
@@ -41,11 +42,11 @@ public class ReminderServiceImpl implements ReminderService {
 
     private SimpleMailMessage createEmail(String mailAddress) {
         StringBuilder body = new StringBuilder("Cher Membre,\r\nLa date de retour d'emprunt(s) a été dépassée(s).\r\n");
-        body.append("\r\nMerci de le(s) rapporter dès que possible.\r\nD'avance merci.\r\nLibraryOC");
+        body.append("\r\nMerci de le(s) rapporter dès que possible.\r\nBibliothèque OC");
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setFrom("admin@libraryoc.fr");
+        simpleMailMessage.setFrom("admbiblioc@gmail.com");
         simpleMailMessage.setTo(mailAddress);
-        simpleMailMessage.setSubject("[LibraryOC] - Retard de retour d'emprunt");
+        simpleMailMessage.setSubject("[BIBLIOTHEQUE OC] - Retard de retour d'emprunt");
         simpleMailMessage.setText(body.toString());
 
         return simpleMailMessage;
