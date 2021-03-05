@@ -10,4 +10,7 @@ public interface LibraryProxy {
 
     @GetMapping("/loanLate-list")
     List<String> listMail();
+
+    @GetMapping("/reservation/refresh")
+    void refreshReservation();
 }
