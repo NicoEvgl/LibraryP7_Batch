@@ -40,7 +40,7 @@ La configuration du serveur SMTP doit être renseignée dans les fichiers src\re
 
 # Déploiement
 
-L'API du projet ('LibraryP7_API' https://github.com/NicoEvgl/LibraryP7_API.git) doit actif.
+L'API du projet ('LibraryP7_API' https://github.com/NicoEvgl/Library_API.git) doit actif.
 
 Application standalone intégrant un conteneur web (grace à SpringBoot)
 
